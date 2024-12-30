@@ -11,27 +11,40 @@
 		"email": "aussiedev81@gmail.com",
 		"url": "https://github.com/AussieDev81"
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/AussieDev81/project-starter"
+	},
 	"engines": {
 		"vscode": "^1.96.0"
 	},
+	"keywords": [
+		"project starter",
+		"web project",
+		"boilerplate",
+		"templates"
+	],
 	"categories": [
 		"Other",
 		"Snippets",
 		"Formatters"
 	],
 	"activationEvents": [
-		"onStartupFinished"
+		"onStartupFinished",
+		"onLanguage:html",
+		"onLanguage:css",
+		"onLanguage:javascript"
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "project-starter.helloWorld",
-				"title": "Project Starter: Hello World"
+				"command": "project-creator.createWebProject",
+				"title": "Project Starter: Create Web Project"
 			},
 			{
-				"command": "project-starter.test",
-				"title": "Project Starter: Test"
+				"command": "project-creator.createHtmlPages",
+				"title": "Project Starter: Create HTML Pages"
 			}
 		],
 		"snippets": []
