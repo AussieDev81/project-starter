@@ -4,7 +4,7 @@
 	"description": "Skip writing boilerplate code when starting projects by using the project starter templates",
 	"version": "0.0.1",
 	"publisher": "AussieDev81",
-	"icon": "./icon.png",
+	"icon": "icon.png",
 	"license": "MIT",
 	"author": {
 		"name": "AussieDev81",
