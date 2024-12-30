@@ -6,7 +6,6 @@ const WORKSPACE_PATH = vscode.workspace.workspaceFolders[0].uri.fsPath;
 const ASSETS_PATH = path.join(WORKSPACE_PATH, "assets");
 const CSS_PATH = path.join(ASSETS_PATH, "css");
 const JS_PATH = path.join(ASSETS_PATH, "js");
-const IMG_PATH = path.join(ASSETS_PATH, "images");
 
 const INDEX_FILENAME = "index.html";
 const CSS_FILENAME = "styles.css";
@@ -33,7 +32,6 @@ const SUCCESS_MESSAGE = "Done... Happy coding!";
 function createWebProject(context) {
 	//Setup the new directories
 	fileUtils.createNewDirectories([ASSETS_PATH, CSS_PATH, JS_PATH]);
-	// fileUtils.createNewDirectories([ASSETS_PATH, CSS_PATH, JS_PATH, IMG_PATH]);
 
 	//Create the index.html file in the workspace root
 	fileUtils.createNewFileFromTemplate(
