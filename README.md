@@ -9,7 +9,7 @@ Skip writing boilerplate code when starting projects by using the project starte
 
 ## Installation
 
-1. Download the `.vsix` file.
+1. Download the latest `.vsix` file from the [actions](https://github.com/AussieDev81/project-starter/actions) tab.
 2. Open Visual Studio Code.
 3. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac) to open the Command Palette.
 4. Type `Extensions: Install from VSIX...` and select it.
