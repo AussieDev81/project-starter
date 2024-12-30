@@ -1,23 +1,29 @@
 {
-    "Generic Event Handler": {
-        "prefix": "!add-event-listener",
-        "description": "Add an event listener to an item by its ID",
+    "Generic event listener": {
+        "prefix": "!event-listener",
         "body": [
             "document.getElementById(\"${1:elementId}\").addEventListener(\"${2:event}\", (event) => {",
             "\t$0",
             "});"
-        ]
+        ],
+        "description": "Add an event listener to an element",
     },
 
-    "Form submit event handler": {
-        "prefix": "!add-form-submit-event-listener",
-        "description": "Add an event listener to a form submit event",
+    "Form submit event listener": {
+        "prefix": "!Form-submit-event-listener",
         "body": [
-            "document.getElementById(\"${1:elementId}\").addEventListener(\"submit\", (event) => {",
-            "\tevent.preventDefault;",
-            "\tconst form = event.target;",
-            "\t$0",
+            "document.getElementById(\"${1:contactForm}\").addEventListener(\"submit\", (event) => {",
+            "// Prevent the form from submitting",
+            "event.preventDefault();",
+            "",
+            "// Get the form data",
+            "const formData = new FormData(event.target);",
+            "const data = Object.fromEntries(formData);",
+            "",
+            "// Log the form data",
+            "console.table(data);",
             "});"
-        ]
+        ],
+        "description": "Add a submit event listener to a form",
     }
 }

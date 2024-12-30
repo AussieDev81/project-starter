@@ -1,48 +1,106 @@
 {
-    "Add a basic HTML skeleton": {
-        "prefix": "!add-basic-html-skeleton",
-        "body": [
-            "<!DOCTYPE html>",
-            "<html lang=\"en\">",
-            "<head>",
-            "\t<meta charset=\"UTF-8\">",
-            "\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
-            "\t<meta name=\"description\" content=\"\" />",
-            "\t<meta name=\"keywords\" content=\"\" />",
-            "\t<meta name=\"author\" content=\"\" />",
-            "\t<meta name=\"color-scheme\" content=\"${1|light,dark|}\">",
-            "\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
-            "\t<title>${2:title}</title>",
-            "</head>",
-            "<body>",
-            "\t<div class=\"container\">",
-            "\t\t$0",
-            "\t</div>",
-            "</body>",
-            "</html>"
-        ]
-    },
+	"Basic HTML skeleton": {
+		"prefix": "!basic-html",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang=\"en\">",
+			"<head>",
+			"   <meta charset=\"UTF-8\">",
+			"   <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
+			"   <meta name=\"description\" content=\"\" />",
+			"   <meta name=\"keywords\" content=\"\" />",
+			"   <meta name=\"author\" content=\"\" />",
+			"   <meta name=\"color-scheme\" content=\"${1|light,dark|}\">",
+			"   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+			"   <title>${2:title}</title>",
+			"</head>",
+			"<body>",
+			"   <div class=\"container\">",
+			"       $0",
+			"   </div>",
+			"</body>",
+			"</html>"
+		],
+		"description": "Creates a basic HTML document"
+	},
 
-    "Add a HTML skeleton with CSS and JS links": {
-        "prefix": "!add-html-skeleton-with-links",
+	"HTML with CSS and JS links": {
+		"prefix": "!html-with-css-js-links",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang=\"en\">",
+			"<head>",
+			"   <meta charset=\"UTF-8\">",
+			"   <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
+			"   <meta name=\"color-scheme\" content=\"${1|light,dark|}\">",
+			"   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+			"   <link rel=\"stylesheet\" href=\"${2:./assets/css/styles.css}\">",
+			"   <title>${3:title}</title>",
+			"</head>",
+			"<body>",
+			"   <div class=\"container\">",
+			"       $0",
+			"   </div>",
+			"   <script src=\"${4:./assets/js/scripts.js}\"></script>",
+			"</body>",
+			"</html>"
+		],
+		"description": "Creates a HTML document with links to CSS and JS files"
+	},
+
+	"HTML with links and meta tags": {
+		"prefix": "!html-with-meta",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang=\"en\">",
+			"<head>",
+			"   <meta charset=\"UTF-8\">",
+			"   <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
+			"   <meta name=\"description\" content=\"${1:description}\" />",
+			"   <meta name=\"keywords\" content=\"${2:keywords}\" />",
+			"   <meta name=\"author\" content=\"${3:author}\" />",
+			"   <meta name=\"color-scheme\" content=\"${4|light,dark|}\">",
+			"   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+			"   <link rel=\"stylesheet\" href=\"${5:./assets/css/styles.css}\">",
+			"   <title>${6:title}</title>",
+			"</head>",
+			"<body>",
+			"   <div class=\"container\">",
+			"       $0",
+			"   </div>",
+			"   <script src=\"${7:./assets/js/scripts.js}\"></script>",
+			"</body>",
+			"</html>"
+		],
+		"description": "Creates a HTML document with meta tags, links to CSS and JS files"
+	},
+
+	"HTML favicon links": {
+		"prefix": "!favicon-links",
+		"body": [
+			"<link rel=\"icon\" href=\"${1:./assets/images/favicon.ico}\" />",
+			"<link rel=\"apple-touch-icon\" sizes=\"${2:180x180}\" href=\"${3:./assets/images/apple-touch-icon.png}\" />",
+			"<link rel=\"icon\" type=\"image/png\" sizes=\"${4:32x32}\" href=\"${5:./assets/images/favicon-32x32.png}\" />",
+			"<link rel=\"icon\" type=\"image/png\" sizes=\"${6:16x16}\" href=\"${7:./assets/images/favicon-16x16.png}\" />"
+		],
+		"description": "Add custom favicon links to the head section of your HTML document"
+	},
+
+    
+    "HTML contact form": {
+        "prefix": "!contact-form",
         "body": [
-            "<!DOCTYPE html>",
-            "<html lang=\"en\">",
-            "<head>",
-            "\t<meta charset=\"UTF-8\">",
-            "\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
-            "\t<meta name=\"color-scheme\" content=\"${1|light,dark|}\">",
-            "\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
-            "\t<link rel=\"stylesheet\" href=\"${2:./assets/css/styles.css}\">",
-            "\t<title>${3:title}</title>",
-            "</head>",
-            "<body>",
-            "\t<div class=\"container\">",
-            "\t\t$0",
-            "\t</div>",
-            "\t<script src=\"${4:./assets/js/scripts.js}\"></script>",
-            "</body>",
-            "</html>"
-        ]
+            "<form id=\"contactForm\">",
+            "   <label for=\"name\">Name:</label>",
+            "   <input type=\"text\" id=\"name\" name=\"name\" required>",
+            "   <label for=\"email\">Email:</label>",
+            "   <input type=\"email\" id=\"email\" name=\"email\" required>",
+            "   <label for=\"message\">Message:</label>",
+            "   <textarea id=\"message\" name=\"message\" required></textarea>",
+            "   <button type=\"submit\">Submit</button>",
+            "</form>"
+        ],
+        "description": "Creates a basic contact form"
     }
+    
 }
