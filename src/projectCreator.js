@@ -19,23 +19,6 @@ const JS_TEMPLATE_PATH = "src/templates/web/assets/js/template.scripts.js";
 
 const SUCCESS_MESSAGE = "Done... Happy coding!";
 
-console.log("*** Project Creator Constants ***");
-console.table({
-	WORKSPACE_PATH,
-	ASSETS_PATH,
-	CSS_PATH,
-	JS_PATH,
-	IMG_PATH,
-	INDEX_FILENAME,
-	CSS_FILENAME,
-	JS_FILENAME,
-	INDEX_TEMPLATE_PATH,
-	NEW_PAGE_TEMPLATE_PATH,
-	CSS_TEMPLATE_PATH,
-	JS_TEMPLATE_PATH,
-	SUCCESS_MESSAGE,
-});
-
 /**
  * Creates a new web project skeleton as per the following:
  * - index.html
