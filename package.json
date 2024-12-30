@@ -65,7 +65,8 @@
 	"scripts": {
 		"lint": "eslint .",
 		"pretest": "npm run lint",
-		"test": "vscode-test"
+		"test": "vscode-test",
+		"build": "echo 'No build step defined'"
 	},
 	"devDependencies": {
 		"@types/mocha": "^10.0.10",
