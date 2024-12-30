@@ -47,16 +47,25 @@
 				"title": "Project Starter: Create HTML Pages"
 			}
 		],
-		"snippets": []
+		"snippets": [
+			{
+				"language": "html",
+				"path": "./src/templates/snippets/html.code-snippets"
+			},
+			{
+				"language": "css",
+				"path": "./src/templates/snippets/css.code-snippets"
+			},
+			{
+				"language": "javascript",
+				"path": "./src/templates/snippets/js.code-snippets"
+			}
+		]
 	},
 	"scripts": {
 		"lint": "eslint .",
 		"pretest": "npm run lint",
 		"test": "vscode-test"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/AussieDev81/project-starter"
 	},
 	"devDependencies": {
 		"@types/mocha": "^10.0.10",

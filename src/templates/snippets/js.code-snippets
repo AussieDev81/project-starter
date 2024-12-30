@@ -1,0 +1,23 @@
+{
+    "Generic Event Handler": {
+        "prefix": "!add-event-listener",
+        "description": "Add an event listener to an item by its ID",
+        "body": [
+            "document.getElementById(\"${1:elementId}\").addEventListener(\"${2:event}\", (event) => {",
+            "\t$0",
+            "});"
+        ]
+    },
+
+    "Form submit event handler": {
+        "prefix": "!add-form-submit-event-listener",
+        "description": "Add an event listener to a form submit event",
+        "body": [
+            "document.getElementById(\"${1:elementId}\").addEventListener(\"submit\", (event) => {",
+            "\tevent.preventDefault;",
+            "\tconst form = event.target;",
+            "\t$0",
+            "});"
+        ]
+    }
+}

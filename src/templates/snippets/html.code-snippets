@@ -1,0 +1,48 @@
+{
+    "Add a basic HTML skeleton": {
+        "prefix": "!add-basic-html-skeleton",
+        "body": [
+            "<!DOCTYPE html>",
+            "<html lang=\"en\">",
+            "<head>",
+            "\t<meta charset=\"UTF-8\">",
+            "\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
+            "\t<meta name=\"description\" content=\"\" />",
+            "\t<meta name=\"keywords\" content=\"\" />",
+            "\t<meta name=\"author\" content=\"\" />",
+            "\t<meta name=\"color-scheme\" content=\"${1|light,dark|}\">",
+            "\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+            "\t<title>${2:title}</title>",
+            "</head>",
+            "<body>",
+            "\t<div class=\"container\">",
+            "\t\t$0",
+            "\t</div>",
+            "</body>",
+            "</html>"
+        ]
+    },
+
+    "Add a HTML skeleton with CSS and JS links": {
+        "prefix": "!add-html-skeleton-with-links",
+        "body": [
+            "<!DOCTYPE html>",
+            "<html lang=\"en\">",
+            "<head>",
+            "\t<meta charset=\"UTF-8\">",
+            "\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
+            "\t<meta name=\"color-scheme\" content=\"${1|light,dark|}\">",
+            "\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+            "\t<link rel=\"stylesheet\" href=\"${2:./assets/css/styles.css}\">",
+            "\t<title>${3:title}</title>",
+            "</head>",
+            "<body>",
+            "\t<div class=\"container\">",
+            "\t\t$0",
+            "\t</div>",
+            "\t<script src=\"${4:./assets/js/scripts.js}\"></script>",
+            "</body>",
+            "</html>"
+        ]
+    }
+}
