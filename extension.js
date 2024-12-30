@@ -1,41 +1,28 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
-const vscode = require('vscode');
-
-// This method is called when your extension is activated
-// Your extension is activated the very first time the command is executed
+const vscode = require("vscode");
+const projectCreator = require("./src/projectCreator");
 
 /**
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
 
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "project-starter" is now active!');
+    context.subscriptions.push(
+        // Create web project skeleton
+        vscode.commands.registerCommand("project-creator.createWebProject", () =>
+            projectCreator.createWebProject(context)
+        ),
 
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with  registerCommand
-	// The commandId parameter must match the command field in package.json
-	const disposable = vscode.commands.registerCommand('project-starter.helloWorld', function () {
-		// The code you place here will be executed every time your command is executed
-
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from project-starter!');
-
-	});
-
-	const test = vscode.commands.registerCommand('project-starter.test', function () {
-		vscode.window.showInformationMessage('This is a test from project-starter!');
-	});
-
-	context.subscriptions.push(disposable, test);
+        // Create HTML pages
+        vscode.commands.registerCommand("project-creator.createHtmlPages", () =>
+            projectCreator.createHtmlPages(context)
+        )
+    );
 }
 
 // This method is called when your extension is deactivated
 function deactivate() {}
 
 module.exports = {
-	activate,
-	deactivate
-}
+    activate,
+    deactivate,
+};

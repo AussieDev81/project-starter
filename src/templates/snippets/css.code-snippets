@@ -1,0 +1,51 @@
+{
+    "Basic CSS layout": {
+        "prefix": "!add-css-layout",
+        "body": [
+            "/*CSS Styling*/",
+            ":root {",
+            "\t--brand-color: $1;",
+            "\t--dark-color: $2;",
+            "\t--mid-color: $3;",
+            "\t--light-color: $4;",
+            "}",
+            "",
+            "body {",
+            "\tbox-sizing: border-box;",
+            "\tfont-family: ${5:fontFamily};",
+            "\tcolor: ${6:textColor};",
+            "\tmargin: 0;",
+            "}",
+            "",
+            "$0"
+        ]
+    },
+    "CSS layout with branding": {
+        "prefix": "!add-css-layout-with-branding",
+        "body": [
+            "/*Font/image imports*/",
+            "@import url(${1});",
+            "",
+            "/*CSS Styling*/",
+            ":root {",
+            "\t--font-color: $2;",
+            "\t--color-brand: $3;",
+            "\t--color-darkest: $4;",
+            "\t--color-dark: $5;",
+            "\t--color-mid: $6;",
+            "\t--color-light: $7;",
+            "\t--color-lightest: $8;",
+            "}",
+            "",
+            "body {",
+            "\tbox-sizing: border-box;",
+            "\tfont-family: ${9:fontFamily};",
+            "\tcolor: var(--font-color);",
+            "\tmargin: 0;",
+            "}",
+            "",
+            "$0"
+        ]
+    },
+}
+
