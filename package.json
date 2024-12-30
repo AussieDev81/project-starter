@@ -1,0 +1,56 @@
+{
+	"name": "project-starter",
+	"displayName": "Project Starter",
+	"description": "Skip writing boilerplate code when starting projects by using the project starter templates",
+	"version": "0.0.1",
+	"publisher": "AussieDev81",
+	"icon": "./icon.png",
+	"license": "MIT",
+	"author": {
+		"name": "AussieDev81",
+		"email": "aussiedev81@gmail.com",
+		"url": "https://github.com/AussieDev81"
+	},
+	"engines": {
+		"vscode": "^1.96.0"
+	},
+	"categories": [
+		"Other",
+		"Snippets",
+		"Formatters"
+	],
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "project-starter.helloWorld",
+				"title": "Project Starter: Hello World"
+			},
+			{
+				"command": "project-starter.test",
+				"title": "Project Starter: Test"
+			}
+		],
+		"snippets": []
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "vscode-test"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/AussieDev81/project-starter"
+	},
+	"devDependencies": {
+		"@types/mocha": "^10.0.10",
+		"@types/node": "20.x",
+		"@types/vscode": "^1.96.0",
+		"@vscode/test-cli": "^0.0.10",
+		"@vscode/test-electron": "^2.4.1",
+		"eslint": "^9.16.0"
+	}
+}
