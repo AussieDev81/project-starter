@@ -18,8 +18,10 @@
             "}",
             "",
             "$0"
-        ]
+        ],
+        "description": "Add a basic CSS layout"
     },
+
     "CSS layout with branding": {
         "prefix": "!add-css-layout-with-branding",
         "body": [
@@ -45,7 +47,8 @@
             "}",
             "",
             "$0"
-        ]
+        ],
+        "description": "Add a CSS layout with branding"
     },
 }
 
