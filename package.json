@@ -50,15 +50,15 @@
 		"snippets": [
 			{
 				"language": "html",
-				"path": "./src/templates/snippets/html.code-snippets"
+				"path": "./src/snippets/html.code-snippets"
 			},
 			{
 				"language": "css",
-				"path": "./src/templates/snippets/css.code-snippets"
+				"path": "./src/snippets/css.code-snippets"
 			},
 			{
 				"language": "javascript",
-				"path": "./src/templates/snippets/js.code-snippets"
+				"path": "./src/snippets/js.code-snippets"
 			}
 		]
 	},
