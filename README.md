@@ -18,8 +18,31 @@ Skip writing boilerplate code when starting projects by using the project starte
 ## Usage
 
 1. Open the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`).
-2. Search for `Hello World` to test the extension.
-3. Customize and use templates to create new projects.
+2. Search for `Create Web Project` or `Create HTML pages` to use the available templates.
+3. Press `!` while in any HTML, CSS, or JavaScript file to view the range of available code snippets. 
+
+Current code snippets:
+
+### HTML
+| Prefix/Command          | Title                         | Description                                                        |
+|-------------------------|-------------------------------|--------------------------------------------------------------------|
+| !basic-html             | Basic HTML skeleton           | Creates a basic HTML document                                      |
+| !html-with-css-js-links | HTML with CSS and JS links    | Creates a HTML document with links to CSS and JS files             |
+| !html-with-meta         | HTML with links and meta tags | Creates a HTML document with meta tags, links to CSS and JS files  |
+| !favicon-links          | HTML favicon links            | Add custom favicon links to the head section of your HTML document |
+| !contact-form           | HTML contact form             | Creates a basic contact form                                       |
+
+### CSS
+| Prefix/Command                | Title                    | Description                    |
+|-------------------------------|--------------------------|--------------------------------|
+| !add-css-layout               | Basic CSS layout         | Add a basic CSS layout         |
+| !add-css-layout-with-branding | CSS layout with branding | Add a CSS layout with branding |
+
+### JavaScript
+| Prefix/Command              | Title                      | Description                          |
+|-----------------------------|----------------------------|--------------------------------------|
+| !event-listener             | Generic event listener     | Add an event listener to an element  |
+| !Form-submit-event-listener | Form submit event listener | dd a submit event listener to a form |
 
 ## Requirements
 
