@@ -62,6 +62,11 @@
 			}
 		]
 	},
+	"configurationDefaults": {
+		"emmet.includeLanguages": {
+			"javascript": "javascriptreact"
+		}
+	},
 	"scripts": {
 		"lint": "eslint .",
 		"pretest": "npm run lint",
